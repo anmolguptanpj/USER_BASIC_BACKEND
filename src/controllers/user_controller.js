@@ -33,4 +33,7 @@ const userSchema =  new mongoose.Schema({
         trim:true,
         required:true
     }
-})
+},{timestamps:true})
+
+
+export const User = mongoose.model("User",userSchema)
